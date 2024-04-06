@@ -8,7 +8,6 @@ describe('AuthService', () => {
   let fakeUsersService: Partial<UsersService>;
 
   beforeEach(async () => {
-    // Create a fake copy of the users service
     const users: User[] = [];
     fakeUsersService = {
       find: (email: string) => {
