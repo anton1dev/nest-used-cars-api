@@ -8,7 +8,7 @@ This is a REST API built with Node.js and TypeScript using:
 
 That application allows managing used cars prices. Users can submit reports about sold cars, and the application can calculate the estimate based on the average price of the car from the submitted reports.
 
-##Server is live
+## Server is live
 Just visit: ```https://nest-used-cars-api-42aabc242416.herokuapp.com/```
 
 ## How to Run the Application
