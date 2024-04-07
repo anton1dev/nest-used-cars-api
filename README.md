@@ -12,22 +12,20 @@ That application allows managing used cars prices. Users can submit reports abou
 
 1. **Installing Dependencies**: Open an NPM (Node Package Manager) terminal and run:
 
-npm install
-
+```npm install```
 
 2. **Creating a `.env.development` File**: Fill it with the following environment variables:
-DB_NAME=db.sqlite
-COOKIE_KEY=alskdfjlkj
+
+```DB_NAME=db.sqlite```
+```COOKIE_KEY=alskdfjlkj```
 
 
 3. **Database Migration**: Run the following command in your terminal: 
 
-npm run typeorm migration:generate -- -n initial-schema -o
-
+```npm run typeorm migration:generate -- -n initial-schema -o```
 
 4. **Starting the App**: Simply type:
-npm start
-
+```npm start```
 
 After a few seconds, the application will be up and running, and all functionality will be available.
 
@@ -35,14 +33,14 @@ After a few seconds, the application will be up and running, and all functionali
 
 | Route          | Method | Description            | Authentication  |
 |----------------|--------|------------------------|-----------------|
-| /auth/signup   | POST   | Register a new user    | No              |
-| /auth/signin   | POST   | Login a user           | No              |
-| /auth/signout  | POST   | Logout a user          | Yes             |
-| /auth/profile  | GET    | Get the current user   | Yes             |
-| /auth/:id      | GET    | Get other user profile | No              |
-| /auth/:id      | PATCH  | Update profile info    | Yes             |
-| /reports       | POST   | Create a new report    | Yes             |
-| /reports/:id   | PATCH  | Approve report         | Yes (Admin only)|
-| /reports       | GET    | Get the estimate       | No              |
+| /auth/signup   | ```POST```   | Register a new user    | No              |
+| /auth/signin   | ```POST```   | Login a user           | No              |
+| /auth/signout  | ```POST```   | Logout a user          | Yes             |
+| /auth/profile  | ```GET```    | Get the current user   | Yes             |
+| /auth/:id      | ```GET```    | Get other user profile | No              |
+| /auth/:id      | ```PATCH```  | Update profile info    | Yes             |
+| /reports       | ```POST```   | Create a new report    | Yes             |
+| /reports/:id   | ```PATCH```  | Approve report         | Yes (Admin only)|
+| /reports       | ```GET```    | Get the estimate       | No              |
 
 Feel free to use these endpoints to interact with the API.
